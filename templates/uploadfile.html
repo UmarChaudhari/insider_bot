@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload File</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='uploadfiles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Upload File</h1>
+    <div class="upload-form">
+        {% if message %}
+        <p>{{ message }}</p>
+        {% endif %}
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="pdf-file" id="file-input" multiple required>
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+    <div id="notification-area"></div>
+  </div>
+  <button class="button" onclick="window.location.href='/'">Chat With Me</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+  <script src="{{ url_for('static', filename='uploadfile.js') }}"></script>
+</body>
+</html>

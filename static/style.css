@@ -1,0 +1,137 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("bck.jpg");
+    background-size: cover;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  
+  .heading {
+    text-align: center;
+    color: white;
+  }
+  
+  .chat-window {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+    max-height: 400px;
+  }
+  
+  .user-message {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .bot-message {
+    background-color: #24f5c4;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-input {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .user-input textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 40px; /* Set a minimum height */
+    max-height: 160px; /* Set a maximum height */
+    transition: height 0.3s ease; /* Add smooth height transition */
+  }
+  
+  .user-input button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .user-input button:hover {
+    background-color: #0056b3;
+  }
+  
+  .user-input button:focus {
+    outline: none;
+  }
+  h2 {
+    text-align: center;
+    color: white;
+  }
+  
+  .heading {
+    text-align: center;
+    color: white;
+  }
+  
+
+  /* Existing CSS styles... */
+
+/* Styling for the upload page */
+#upload-page {
+  display: none;
+}
+
+#upload-page h2 {
+  text-align: center;
+  color: white;
+}
+
+#upload-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#upload-form input[type="file"] {
+  display: block;
+  margin: 0 auto;
+}
+
+#upload-form button[type="submit"] {
+  display: block;
+  margin: 20px auto;
+}
+
+.button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

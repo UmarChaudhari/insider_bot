@@ -1,0 +1,10 @@
+transformers==4.29.2
+langchain==0.0.150
+pypdf==3.9.0
+pandas==2.0.1
+tiktoken==0.4.0
+textract==1.6.5
+openai==0.27
+pinecone-client==2.2.1
+flask
+gunicorn==20.1.0

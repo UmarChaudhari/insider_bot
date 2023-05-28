@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My ChatBot</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>ChatBot</h1>
+    <h2>Chat with Insider Bancario Chat-Bot</h2>
+    <div class="chat-window" id="chat-window"></div>
+    <div class="user-input">
+      <textarea type="text" id="user-input" placeholder="Enter your query..."></textarea>
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+  <button class="button"onclick="window.location.href='/uploadfile'">Upload Files</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
