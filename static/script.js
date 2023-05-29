@@ -49,7 +49,7 @@ function simulateTyping(message) {
   const delayBeforeTyping = 800;
 
   // Delay between typing each character
-  const typingDelay = 50;
+  const typingDelay = 5;
 
   // Update the chat window with the bot typing message
   updateChat('', 'ChatBot');
