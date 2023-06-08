@@ -3,8 +3,9 @@ from langchain.llms import OpenAI
 from langchain.chains.question_answering import load_qa_chain
 
 # Connecting to OpenAI using secret API Key to perform various tasks
+# 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
 def connect_openai():
-    os.environ["OPENAI_API_KEY"] = "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"
+    os.environ["OPENAI_API_KEY"] = ""
     openai.api_key=os.environ["OPENAI_API_KEY"]
     return
 
